@@ -26,7 +26,7 @@ export default async function HomePage() {
         <div className="max-w-7xl mx-auto px-6 py-28 md:py-40 grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-wood-300 text-sm uppercase tracking-[0.2em] mb-4">
-              Est. Nairobi
+              Est. Nakuru
             </p>
             <h1 className="font-display text-5xl md:text-6xl leading-[1.1] mb-6">
               Furniture for a <em className="italic text-wood-300">life</em> well lived.
