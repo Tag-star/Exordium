@@ -50,10 +50,10 @@ export default async function HomePage() {
       <section className="max-w-7xl mx-auto px-6 py-16">
   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
     {[
-      { name: "Living Room", slug: "living-room", image: "/categories/living-room.jpeg" },
-      { name: "Bedroom", slug: "bedroom", image: "/categories/bedroom.jpg" },
-      { name: "Dining", slug: "dining", image: "/categories/dining.jpg" },
-      { name: "Outdoor", slug: "outdoor", image: "/categories/outdoor.jpg" },
+      { name: "Living Room", slug: "living-room", image: "/living-room.jpeg" },
+      { name: "Bedroom", slug: "bedroom", image: "/bedroom.jpeg" },
+      { name: "Dining", slug: "dining", image: "/dining.jpeg" },
+      { name: "Outdoor", slug: "outdoor", image: "/outdoor.jpeg" },
     ].map((cat) => (
       <Link
         key={cat.slug}
