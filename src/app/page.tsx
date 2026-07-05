@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
 import ProductCard from "@/components/ProductCard";
@@ -49,10 +50,10 @@ export default async function HomePage() {
       <section className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { name: "Living Room", slug: "living-room" },
-            { name: "Bedroom", slug: "bedroom" },
-            { name: "Dining", slug: "dining" },
-            { name: "Outdoor", slug: "outdoor" },
+            { name: "Living Room", slug: "living-room", image: "/categories/living-room.jpeg" },
+            { name: "Bedroom", slug: "bedroom", image: "/categories/bedroom.jpg" },
+            { name: "Dining", slug: "dining", image: "/categories/dining.jpg" },
+            { name: "Outdoor", slug: "outdoor", image: "/categories/outdoor.jpg" },
           ].map((cat) => (
             <Link
               key={cat.slug}
