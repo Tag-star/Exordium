@@ -40,7 +40,7 @@ export default async function HomePage() {
             </Link>
           </div>
           <div className="relative aspect-square bg-wood-700/30 rounded-sm border border-wood-300/20 flex items-center justify-center">
-            <Image src="/home-profile.png" alt="Exordium furniture" fill className="object-cover" priority />
+            <Image src="/home-profile.jpeg" alt="Exordium furniture" fill className="object-cover" priority />
           </div>
         </div>
       </section>
