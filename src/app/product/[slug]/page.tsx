@@ -46,7 +46,7 @@ export default async function ProductPage({ params }: { params: { slug: string }
         <div>
           <div className="relative aspect-square bg-cream-200 rounded-sm overflow-hidden mb-3">
             {mainImage ? (
-              <Image src={mainImage.url} alt={product.name} fill className="object-cover" priority />
+              <Image src={mainImage.url} alt={product.name} fill className="object-contain" priority />
             ) : (
               <div className="w-full h-full flex items-center justify-center text-wood-400 text-sm">
                 No image available
@@ -57,7 +57,7 @@ export default async function ProductPage({ params }: { params: { slug: string }
             <div className="grid grid-cols-4 gap-3">
               {images.map((img) => (
                 <div key={img.id} className="relative aspect-square bg-cream-200 rounded-sm overflow-hidden">
-                  <Image src={img.url} alt={product.name} fill className="object-cover" />
+                  <Image src={img.url} alt={product.name} fill className="object-contain" />
                 </div>
               ))}
             </div>
