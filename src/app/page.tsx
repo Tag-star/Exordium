@@ -48,25 +48,32 @@ export default async function HomePage() {
 
       {/* Categories strip */}
       <section className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {[
-            { name: "Living Room", slug: "living-room", image: "/categories/living-room.jpeg" },
-            { name: "Bedroom", slug: "bedroom", image: "/categories/bedroom.jpg" },
-            { name: "Dining", slug: "dining", image: "/categories/dining.jpg" },
-            { name: "Outdoor", slug: "outdoor", image: "/categories/outdoor.jpg" },
-          ].map((cat) => (
-            <Link
-              key={cat.slug}
-              href={`/shop?category=${cat.slug}`}
-              className="group relative aspect-square bg-cream-200 rounded-sm overflow-hidden flex items-end p-5"
-            >
-              <span className="font-display text-lg text-charcoal-900 group-hover:text-wood-600 transition-colors">
-                {cat.name}
-              </span>
-            </Link>
-          ))}
-        </div>
-      </section>
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+    {[
+      { name: "Living Room", slug: "living-room", image: "/categories/living-room.jpeg" },
+      { name: "Bedroom", slug: "bedroom", image: "/categories/bedroom.jpg" },
+      { name: "Dining", slug: "dining", image: "/categories/dining.jpg" },
+      { name: "Outdoor", slug: "outdoor", image: "/categories/outdoor.jpg" },
+    ].map((cat) => (
+      <Link
+        key={cat.slug}
+        href={`/shop?category=${cat.slug}`}
+        className="group relative aspect-square rounded-sm overflow-hidden flex items-end p-5"
+      >
+        <Image
+          src={cat.image}
+          alt={cat.name}
+          fill
+          className="object-cover transition-transform duration-700 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900/60 to-transparent" />
+        <span className="relative z-10 font-display text-lg text-cream-50">
+          {cat.name}
+        </span>
+      </Link>
+    ))}
+  </div>
+</section>
 
       {/* Featured products */}
       {featured.length > 0 && (
