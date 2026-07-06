@@ -31,7 +31,7 @@ export default function Footer() {
 
         <div>
           <h4 className="text-xs uppercase tracking-wide text-cream-100/50 mb-4">Contact</h4>
-          <p className="text-sm text-cream-100/70">exordiumltd@gmail.come</p>
+          <p className="text-sm text-cream-100/70">exordiumltd@gmail.com</p>
           <p className="text-sm text-cream-100/70 mt-1">Nakuru, Kenya</p>
         </div>
       </div>
