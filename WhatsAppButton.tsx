@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+const WHATSAPP_NUMBER = "254734494475"; 
+
 export default function WhatsAppButton() {
   return (
     <Link
