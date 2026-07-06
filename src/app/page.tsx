@@ -110,7 +110,7 @@ export default async function HomePage() {
           <div>
             <h3 className="font-display text-xl mb-2">Flexible Payment</h3>
             <p className="text-sm text-charcoal-800/70">
-              Pay via M-Pesa or card — whichever is easiest for you.
+              Pay via M-Pesa or card, whichever is easiest for you.
             </p>
           </div>
         </div>
