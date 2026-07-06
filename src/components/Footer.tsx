@@ -14,7 +14,7 @@ export default function Footer() {
         <div>
           <h4 className="text-xs uppercase tracking-wide text-cream-100/50 mb-4">Contact</h4>
           
-            href="mailto:exordiumltd@gmail.com"
+          <a href="mailto:exordiumltd@gmail.com"
             className="text-sm text-cream-100/70 hover:text-wood-300 block"
           >
             exordiumltd@gmail.com
