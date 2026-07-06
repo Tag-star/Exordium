@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SocialLinks from "@/components/SocialLinks";
 
 export default function Footer() {
   return (
@@ -10,14 +11,18 @@ export default function Footer() {
             Furniture built to last, designed with warmth and intention.
           </p>
         </div>
-
         <div>
           <h4 className="text-xs uppercase tracking-wide text-cream-100/50 mb-4">Contact</h4>
-          <p className="text-sm text-cream-100/70">exordiumltd@gmail.com</p>
+          
+            href="mailto:exordiumltd@gmail.com"
+            className="text-sm text-cream-100/70 hover:text-wood-300 block"
+          >
+            exordiumltd@gmail.com
+          </a>
           <p className="text-sm text-cream-100/70 mt-1">Nakuru, Kenya</p>
+          <SocialLinks />
         </div>
       </div>
-
       <div className="border-t border-cream-100/10 py-6 text-center text-xs text-cream-100/40">
         © {new Date().getFullYear()} Exordium. All rights reserved.
       </div>
