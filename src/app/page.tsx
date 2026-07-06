@@ -34,7 +34,7 @@ export default async function HomePage() {
             </h1>
             <p className="text-cream-100/70 text-lg leading-relaxed mb-8 max-w-md">
               Thoughtfully designed, built to last. Explore the Exordium
-              collection — pieces made for the way you actually live.
+              collection pieces made for the way you actually live.
             </p>
             <Link href="/shop" className="btn-primary bg-wood-500 hover:bg-wood-600">
               Shop the Collection
