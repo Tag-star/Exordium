@@ -25,6 +25,10 @@ export default function Footer() {
       </div>
       <div className="border-t border-cream-100/10 py-6 text-center text-xs text-cream-100/40">
         © {new Date().getFullYear()} Exordium. All rights reserved.
+        {" · "}
+        <Link href="/privacy-policy" className="hover:text-wood-300 underline">
+          Privacy Policy
+        </Link>
       </div>
     </footer>
   );
