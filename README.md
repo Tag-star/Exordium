@@ -72,3 +72,4 @@ Until then, both payment methods still create an order in the Orders tab — you
 - Deleting a product also removes its images from storage.
 - The homepage "Featured Pieces" section only shows products with the "Featured on homepage" checkbox enabled in the admin form.
 - Currency is displayed in KES throughout — search the codebase for "KES" if you want to change this.
+
